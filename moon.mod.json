@@ -1,0 +1,13 @@
+{
+  "name": "username/moonbit_claude_proxy",
+  "version": "0.1.0",
+  "readme": "README.mbt.md",
+  "repository": "",
+  "license": "MIT",
+  "keywords": ["claude", "openai", "proxy", "api"],
+  "description": "Claude Code Proxy - translate Claude API requests to OpenAI-compatible API calls",
+  "preferred-target": "native",
+  "deps": {
+    "moonbitlang/async": "0.19.0"
+  }
+}
