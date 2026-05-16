@@ -3,4 +3,4 @@ _build/
 .mooncakes/
 .moonagent/
 .github
-.githubhooks
+.githooks
