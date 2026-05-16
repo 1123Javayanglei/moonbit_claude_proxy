@@ -4,6 +4,7 @@
 
 ///|
 async fn main {
+  try! @lib.load_env()
   let config = @lib.Config::load()
 
   if @env.args().length() > 1 && @env.args()[1] == "--help" {
