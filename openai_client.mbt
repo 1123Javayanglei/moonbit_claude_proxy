@@ -9,7 +9,7 @@ pub(all) struct OpenAIClient {
 }
 
 ///|
-fn OpenAIClient::new(config : Config) -> OpenAIClient {
+pub fn OpenAIClient::new(config : Config) -> OpenAIClient {
   {
     base_url: config.openai_base_url,
     api_key: config.openai_api_key,

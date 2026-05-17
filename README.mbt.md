@@ -165,6 +165,32 @@ Claude Code 客户端
 - **JSON 处理:** moonbitlang/core/json
 - **目标平台:** native
 
+## 测试
+
+### 单元测试（纯逻辑，无需网络）
+
+```bash
+moon test --target native convert_test.mbt
+```
+
+覆盖：模型映射、Claude↔OpenAI 请求/响应转换、SSE 事件、JSON 解析、多模态图片、工具定义转换等。
+
+### 集成测试（真实 API 调用，需配置 .env）
+
+```bash
+moon test --target native integration_test.mbt
+```
+
+覆盖：简单对话、System Prompt、多工具并行调用、模型映射验证、配置加载。
+
+集成测试会自动加载 `.env` 文件，发送请求到配置的 API 提供商，并打印完整的请求和响应 JSON。
+
+### 运行全部测试
+
+```bash
+moon test --target native
+```
+
 ## 编译与打包
 
 ### 开发模式
