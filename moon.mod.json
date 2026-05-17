@@ -1,8 +1,8 @@
 {
-  "name": "yanglei/moonbit_claude_proxy",
+  "name": "1123Javayanglei/moonbit_claude_proxy",
   "version": "0.1.0",
   "readme": "README.mbt.md",
-  "repository": "",
+  "repository": "https://github.com/1123Javayanglei/moonbit_claude_proxy",
   "license": "MIT",
   "keywords": ["claude", "openai", "proxy", "api"],
   "description": "Claude Code Proxy - translate Claude API requests to OpenAI-compatible API calls",

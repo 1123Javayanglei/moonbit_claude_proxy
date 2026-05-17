@@ -1,5 +1,5 @@
 import {
-  "yanglei/moonbit_claude_proxy" @lib,
+  "1123Javayanglei/moonbit_claude_proxy" @lib,
   "moonbitlang/async",
   "moonbitlang/core/env",
 }
