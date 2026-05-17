@@ -165,7 +165,9 @@ Claude Code 客户端
 - **JSON 处理:** moonbitlang/core/json
 - **目标平台:** native
 
-## 开发
+## 编译与打包
+
+### 开发模式
 
 ```bash
 # 类型检查
@@ -174,12 +176,45 @@ moon check --target native
 # 格式化代码
 moon fmt
 
-# 运行
+# 直接运行
 moon run cmd/main
 
 # 查看帮助
 moon run cmd/main -- --help
 ```
+
+### 编译可执行文件
+
+```bash
+# Debug 构建（快速，包含调试信息）
+moon build --target native
+
+# Release 构建（优化，体积更小）
+moon build --target native --release
+```
+
+产物路径：
+
+| 模式 | 路径 |
+|-----|------|
+| Debug | `_build/native/debug/build/cmd/main/main.exe` |
+| Release | `_build/native/release/build/cmd/main/main.exe` |
+
+运行：
+
+```bash
+./_build/native/debug/build/cmd/main/main.exe
+```
+
+### 部署
+
+二进制文件可独立运行，部署只需：
+
+1. 拷贝 `main.exe` 到目标机器
+2. 在**同平台**创建 `.env` 配置文件
+3. 运行 `./main.exe`
+
+> **注意:** MoonBit 目前不支持交叉编译，Windows/Linux/macOS 需在各自平台分别编译。
 
 ## 许可证
 
